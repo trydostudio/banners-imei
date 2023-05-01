@@ -1,0 +1,22 @@
+:root {
+  --layer-hide: -1;
+  --layer-auto: 'auto';
+  --layer-base: 0;
+  --layer-docked: 10;
+  --layer-texture: 30;
+  --layer-content: 50;
+  --layer-backdrop: 900;
+  --layer-menu: 1000;
+  --layer-menu-button: 1010;
+  --layer-search-backdrop: 1020;
+  --layer-search-overlay: 1100;
+  --layer-search-button: 1110;
+  --layer-banner: 1200;
+  --layer-overlay: 1300;
+  --layer-modal: 1400;
+  --layer-popover: 1500;
+  --layer-skipLink: 1600;
+  --layer-toast: 1700;
+  --layer-tooltip: 1800;
+  --layer-cursor: 99999;
+}

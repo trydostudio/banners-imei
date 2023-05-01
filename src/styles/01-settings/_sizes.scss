@@ -1,0 +1,96 @@
+@use "../02-tools/mediaQueries" as *;
+
+:root {
+  --content-tiny: 580px;
+  --content-small: 767px;
+  --content-desk: 900px;
+  --content-medium: 1070px;
+  --content-large: 1200px;
+  --content-xlarge: 1300px;
+  --content-xxlarge: 1600px;
+  --content-xxxlarge: 1920px;
+}
+
+@mixin fontSizeBigX() {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  @include respond-to("small") {
+    font-size: 1.4rem;
+    line-height: 1.5;
+  }
+  @include respond-to("desk") {
+    font-size: 1.7rem;
+    line-height: 1.5;
+  }
+  @include respond-to("medium") {
+    font-size: 2.3rem;
+    line-height: 1.5;
+  }
+  @include respond-to("large") {
+    font-size: 1.85rem;
+    line-height: 1.5;
+  }
+  @include respond-to("xxlarge") {
+    font-size: 2.35rem;
+    line-height: 1.5;
+  }
+}
+
+@mixin fontSizeBig() {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  @include respond-to("small") {
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+  @include respond-to("medium") {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+}
+
+@mixin fontSizeMedium() {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+@mixin fontSizeSmall() {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+@mixin fontSizeMenu() {
+  font-size: 1rem;
+  line-height: 150%;
+}
+
+@mixin fontSizeBase() {
+  font-size: var(--font-step--1);
+  line-height: 1.5;
+}
+
+:root {
+  --font-size-base: 1.2rem;
+  --font-step--3: clamp(0.8rem, calc(0.73rem + 0.13vw), 0.84rem);
+  --font-step--2: clamp(0.9rem, calc(0.79rem + 0.38vw), 1rem);
+  --font-step--1: clamp(0.94rem, calc(0.79rem + 0.38vw), 1.13rem);
+  --font-step-0: clamp(1.13rem, calc(0.83rem + 0.75vw), 1.5rem);
+  --font-step-1: clamp(1.35rem, calc(0.83rem + 1.3vw), 2rem);
+  --font-step-2: clamp(1.62rem, calc(0.78rem + 2.09vw), 2.67rem);
+  --font-step-3: clamp(1.94rem, calc(0.66rem + 3.22vw), 3.55rem);
+  --font-step-4: clamp(2.33rem, calc(0.41rem + 4.81vw), 4.74rem);
+  --font-step-5: clamp(2.8rem, calc(-0.01rem + 7.03vw), 6.31rem);
+  --font-step-6: clamp(3rem, calc(-0.01rem + 7.03vw), 7rem);
+}
+
+@mixin theContainer--large() {
+  width: 100%;
+  max-width: var(--content-large);
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  @include respond-to("medium") {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}

@@ -1,0 +1,4 @@
+@mixin height-intro {
+  height: calc(100vh - 185px);
+  min-height: 600px;
+}

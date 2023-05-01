@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "Typo Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/typo-grotesk.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Typo Grotesk";
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  src: url(/fonts/typo-grotesk-bold.woff2) format("woff2");
+}
+
+:root {
+  --font-family-sans-serif: -apple-system, blinkmacsystemfont, avenir next,
+    avenir, segoe ui, helvetica neue, helvetica, ubuntu, roboto, noto, arial,
+    sans-serif;
+  --font-family-detail: "Typo Grotesk", var(--font-family-sans-serif);
+  --font-family-base: "Typo Grotesk", var(--font-family-sans-serif);
+
+  // Font Weight
+  --font-weight-fine: 300;
+  --font-weight-base: 400;
+  --font-weight-medium: 700;
+  --font-weight-bold: 800;
+  --font-weight-black: 900;
+
+  // Font Line Height
+  --line-height-title: 110%;
+  --line-height-medium: 120%;
+  --line-height-default: 1.5;
+  --line-height-text: 150%;
+
+  // Letterspacing
+  --letter-spacing-tighter: -0.05em;
+  --letter-spacing-tight: -0.025em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.025em;
+  --letter-spacing-wider: 0.05em;
+  --letter-spacing-widest: 0.1em;
+}

@@ -1,0 +1,11 @@
+@use "../01-settings/sizes" as *;
+
+html {
+  background-color: var(--color-bg3);
+}
+body {
+  @include fontSizeBase;
+  font-family: var(--font-family-base);
+  color: var(--color-text-light);
+  background-color: var(--color-bg3);
+}

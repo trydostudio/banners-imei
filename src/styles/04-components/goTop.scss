@@ -1,0 +1,15 @@
+.goTop {
+  padding: 0.5rem 1rem;
+  position: fixed;
+  bottom: 0;
+  right: 1rem;
+  transform: translateY(120%);
+  border-radius: 2px 2px 0 0;
+  color: white;
+  background-color: var(--color-primary);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  &.show {
+    transform: translateY(0);
+  }
+}

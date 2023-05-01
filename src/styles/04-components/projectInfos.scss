@@ -1,0 +1,8 @@
+@use "../01-settings/sizes" as *;
+
+.projectInfos {
+  @include theContainer--large;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: right;
+}
