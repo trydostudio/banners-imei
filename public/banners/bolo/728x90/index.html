@@ -27,7 +27,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"index_atlas_P_1", frames: [[0,0,728,90],[0,92,728,90],[0,184,728,90],[0,276,728,90],[0,368,728,90],[0,460,728,90],[0,552,728,90],[0,644,728,90]]}
+		{name:"index_atlas_P_1", frames: [[0,0,728,90],[0,92,728,90],[0,184,728,90],[0,276,728,90],[0,368,728,90],[0,460,728,90],[0,552,728,90],[0,644,728,90],[0,736,728,90]]}
 ];
 (lib.AnMovieClip = function(){
 	this.actionFrames = [];
@@ -70,13 +70,17 @@ lib.ssMetadata = [
 	this.initialize(ss["index_atlas_P_1"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
-(lib.t5 = function() {
+(lib.t4 = function() {
 	this.initialize(ss["index_atlas_P_1"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
-(lib.t6 = function() {
+(lib.t5 = function() {
 	this.initialize(ss["index_atlas_P_1"]);
 	this.gotoAndStop(7);
+}).prototype = p = new cjs.Sprite();
+(lib.t6 = function() {
+	this.initialize(ss["index_atlas_P_1"]);
+	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
 function mc_symbol_clone() {
@@ -123,7 +127,7 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 	this._renderFirstFrame();
 }).prototype = getMCSymbolPrototype(lib.t5_1, new cjs.Rectangle(0,0,728,90), null);
-(lib.t4 = function(mode,startPosition,loop,reversed) {
+(lib.t4_1 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -133,9 +137,12 @@ if (reversed == null) { reversed = false; }
 	props.loop = loop;
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
+	// Layer_1
+	this.instance = new lib.t4();
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(450));
 	this._renderFirstFrame();
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(0,0,0,0);
+p.nominalBounds = new cjs.Rectangle(0,0,728,90);
 (lib.t3_1 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -267,8 +274,8 @@ if (reversed == null) { reversed = false; }
 	this.instance_1._off = true;
 	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(59).to({_off:false},0).to({x:150,alpha:1},31,cjs.Ease.quintOut).wait(360));
 	// t4
-	this.instance_2 = new lib.t4();
-	this.instance_2.setTransform(120,125,1,1,0,0,0,150,125);
+	this.instance_2 = new lib.t4_1();
+	this.instance_2.setTransform(180,125,1,1,0,0,0,150,125);
 	this.instance_2.alpha = 0;
 	this.instance_2._off = true;
 	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(45).to({_off:false},0).to({x:150,alpha:1},30,cjs.Ease.quintOut).wait(375));
@@ -318,7 +325,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"index_atlas_P_1.png?1683129359126", id:"index_atlas_P_1"}
+		{src:"index_atlas_P_1.png?1683135709953", id:"index_atlas_P_1"}
 	],
 	preloads: []
 };
