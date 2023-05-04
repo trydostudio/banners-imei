@@ -1,0 +1,16 @@
+.downloadZip {
+  padding: 0.5rem 1rem;
+  position: fixed;
+  bottom: 0;
+  right: 1rem;
+  border-radius: 2px 2px 0 0;
+  color: var(--color-primary);
+  text-decoration: none;
+  background-color: var(--color-warning-500);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    color: var(--color-warning-500);
+    background-color: var(--color-primary);
+  }
+}
