@@ -13,13 +13,6 @@
 <meta name="authoring-tool" content="Adobe_Animate_CC">
 <meta name="ad.size" content="width=970,height=250">
 <title>index</title>
-<script type="text/javascript">
-	function getParameterByName(name) {
-	var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
-	return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
-	}
-	var clickTag = getParameterByName('clickTag');
-</script>
 <!-- write your code here -->
 <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
 <script>
@@ -251,7 +244,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 }).prototype = getMCSymbolPrototype(lib.bg_1, new cjs.Rectangle(0,0,970,250), null);
 // stage content:
-(lib._970x250cabeleleira = function(mode,startPosition,loop,reversed) {
+(lib._970x250marceneiro = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = false; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -325,7 +318,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"index_atlas_P_1.png?1683212747954", id:"index_atlas_P_1"}
+		{src:"index_atlas_P_1.png?1683643563223", id:"index_atlas_P_1"}
 	],
 	preloads: []
 };
@@ -459,7 +452,7 @@ function handleComplete(evt,comp) {
 	for(i=0; i<ssMetadata.length; i++) {
 		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
 	}
-	exportRoot = new lib._970x250cabeleleira();
+	exportRoot = new lib._970x250marceneiro();
 	stage = new lib.Stage(canvas);	
 	//Registers the "tick" event listener.
 	fnStartAnimation = function() {
@@ -479,7 +472,7 @@ function handleComplete(evt,comp) {
 	<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:970px; height:250px;
     position: relative;">
 		<a
-        href="javascript:void(window.open(clickTag))"
+        target=_”blank” href=”%%CLICKTAG%%”
         style="
           width: 970px;
           height: 250px;
