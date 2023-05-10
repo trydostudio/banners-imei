@@ -28,10 +28,10 @@ export const itemsContent = bannersJson.children
 export const ProjectInfos = () => {
   return (
     <div className="projectInfos">
-      <strong>Agência:</strong> DEBRITO <br />
-      <strong>Cliente:</strong> SEBRAE <br />
-      <strong>Campanha:</strong> IMEI <br />
-      <strong>Data:</strong> abril/2023 <br />
+      <strong>Agência:</strong> NACIONAL <br />
+      <strong>Cliente:</strong> MDR <br />
+      <strong>Campanha:</strong> CARAVANA DAS PERIFERIAS <br />
+      <strong>Data:</strong> MAIO/2023 <br />
     </div>
   );
 };

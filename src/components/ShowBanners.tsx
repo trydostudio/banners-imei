@@ -89,7 +89,7 @@ export const ShowBanners = ({ items }: Props) => {
                                     ? "Bolo"
                                     : item.category === "marceneiro"
                                     ? "Marceneiro"
-                                    : "Cabeleireira"}
+                                    : "GERAL"}
                                 </span>
                               </div>
                               <div className="theBanner__controll">
